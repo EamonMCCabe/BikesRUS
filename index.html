@@ -1,83 +1,195 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bikes R US</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
 
-    <title>My page title</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!----Button to reutn the user to top of page---->
+	<button onclick="Return_To_Top()" id="Return_Top_Button" title="Return to top">&#8657;</button>
+	<!--Header section-->
+	<header>
+		<div>	
+			<img src="Images/TitleHomePage.png" alt="Bikes R US" class="HeaderImage">	
+			<p onclick="openNav()" class="MenuIcon">&#9776;</p> 
+		</div>
+	</header>
 
-    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-  </head>
+	<!--navigation menu section-->
+	 <!-- The overlay -->
+	<div id="myNav" class="Overlay">
 
-  <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <header>
-      <h1>Header</h1>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-       <!-- A Search form is another common non-linear way to navigate through a website. -->
-
-       <form>
-         <input type="search" name="q" placeholder="Search query">
-         <input type="submit" value="Go!">
-       </form>
-     </nav>
-
-    <!-- Here is our page's main content -->
-    <main>
-
-      <!-- It contains an article -->
-      <article>
-        <h2>Article heading</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
-
-        <h3>Subsection</h3>
-
-        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
-
-        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-
-        <h3>Another subsection</h3>
-
-        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-
-        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
-      </article>
-
-      <!-- the aside content can also be nested within the main content -->
-      <aside>
-        <h2>Related</h2>
-
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well...</a></li>
+  <!-- Overlay content -->
+    <div class="Overlay_Menu">
+    <ul>
+            <li><a href="index.html" class ="Active">HomePage</a></li>
+            <li><a href="ForSale.html">For Sale</a></li>
+			<li><a href="PartShop.html">Parts Shop</a></li>
+            <li><a href="RevInfo.html">Reviews/Information</a></li>
+			<li><a href="HistoryFuture.html">History/Future</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="SiteMap.html">Site Map</a></li>
+			<li><a href="ContactUS.html">Contact us</a></li>
+			<li><a href="AboutUS.html">About us</a></li>
         </ul>
-      </aside>
+	</div>
+	</div>
 
-    </main>
+ 
+	<!--Main content section-->
+	<main>
+		<div class="Home_Page_Top_Row">
+			<div class="Common_Column">
+				<h1 class="Home_Page_Alignment" >Welcome to BIKES R US!!!! Here we hope to for fill your every need bike related.  The services we offer are a for sale page, spare parts, history, reviews and much much more!!! <br>Please feel free to browse our website at your leasuire and email us with any suggestions you have.</h1>
+			</div>
+			<div class="Common_Column">
+				<iframe class="Home_Page_Alignment" width="560" height="315" src="https://www.youtube-nocookie.com/embed/OzanXj9EcqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	
+		<section>
+			<div class="Common_Row">
+				<div class="Home_Menu_1st_Column">
+					<div class="Flip_Box_Grid" >	
+						<a href="ForSale.html"				
+						<!--Flip box for the For Sale page-->
+						<div class="Flip_Box">
+							<div class="Flip_Box_Inner">
+								<!--Front side of the Flip Box-->
+								<div class="Flip_Box_Front">	
+									<img src="Images/IndexForSale.png" alt="ForSale">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="Flip_Box_Back">		
+									<img src="Images/IndexForSaleFlipSide.png" alt="ForSale">
+								</div>
+							</div>
+						</div>	
+						</a>
+					</div>
+				</div>
+				
+				<div class="Home_Menu_1st_Column">
+					<div class="Flip_Box_Grid" >	
+						<a href="RevInfo.html"				
+						<!--Flip box for the For Info Page-->
+						<div class="Flip_Box">
+							<div class="Flip_Box_Inner">
+								<!--Front side of the Flip Box-->
+								<div class="Flip_Box_Front">	
+									<img src="Images/IndexRev_InfoFront.png" alt="Reviews/Information">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="Flip_Box_Back">		
+									<img src="Images/IndexRev_InfoBack.png" alt="Reviews/Information">
+								</div>
+							</div>
+						</div>	
+						</a>
+					</div>
+				</div>
+				
+				<div class="Home_Menu_1st_Column">
+					<div class="Flip_Box_Grid" >	
+						<a href="Gallery.html"				
+						<!--Flip box for the For Gallery page-->
+						<div class="Flip_Box">
+							<div class="Flip_Box_Inner">
+								<!--Front side of the Flip Box-->
+								<div class="Flip_Box_Front">	
+									<img src="Images/IndexGalleryFront.png" alt="Gallery">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="Flip_Box_Back">		
+									<img src="Images/IndexGalleryBack.png" alt="Gallery">
+								</div>
+							</div>
+						</div>	
+						</a>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="Common_Row">
+				<div class="Home_Menu_2st_Column">
+					<div class="Flip_Box_Grid" >	
+						<a href="SiteMap.html"				
+						<!--Flip box for the For Site Map page-->
+						<div class="Flip_Box">
+							<div class="Flip_Box_Inner">
+								<!--Front side of the Flip Box-->
+								<div class="Flip_Box_Front">	
+									<img src="Images/IndexSiteMapFront.png" alt="SiteMap">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="Flip_Box_Back">		
+									<img src="Images/IndexSiteMapBack.png" alt="SiteMap">
+								</div>
+							</div>
+						</div>	
+						</a>
+					</div>
+				</div>
+				
+				<div class="Home_Menu_2st_Column">
+					<div class="Flip_Box_Grid" >	
+						<a href="ContactUS.html"				
+						<!--Flip box for the For Contact US page-->
+						<div class="Flip_Box">
+							<div class="Flip_Box_Inner">
+								<!--Front side of the Flip Box-->
+								<div class="Flip_Box_Front">	
+									<img src="Images/IndexContactUsBack.png" alt="Contact US">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="Flip_Box_Back">		
+									<img src="Images/IndexContactUsFront.png" alt="Contact US">
+								</div>
+							</div>
+						</div>	
+						</a>
+					</div>
+				</div>
+				
+				<div class="Home_Menu_2st_Column">
+					<div class="Flip_Box_Grid" >	
+						<a href="AboutUS.html"				
+						<!--Flip box for the For About US page-->
+						<div class="Flip_Box">
+							<div class="Flip_Box_Inner">
+								<!--Front side of the Flip Box-->
+								<div class="Flip_Box_Front">	
+									<img src="Images/IndexAboutUsFront.png" alt="About US">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="Flip_Box_Back">		
+									<img src="Images/IndexAboutUsBack.png" alt="About US">
+								</div>
+							</div>
+						</div>	
+						</a>
+					</div>
+				</div>	
+			</div>
+		</section>	
+	</main>
+	
+	<!--Footer section-->
+	<footer>
+		This website was created by: Eamon McCabe.  It is solely for educational purposes only <br />
+		If you have any questions about the information you have found here please contact me at: <a href="mailto:drwho00769@gmail.com">drwho00769@gmail.com</a>
+	</footer>
+	
+	<script type="text/javascript" src="js/BikesRUsjavascript.js">
+	</script>	
 
-    <!-- And here is our main footer that is used across all the pages of our website -->
-
-    <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
-    </footer>
-
-  </body>
+</body>
 </html>
