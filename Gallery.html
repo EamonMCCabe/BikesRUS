@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!----Button to reutn the user to top of page---->
+	<button onclick="Return_To_Top()" id="Return_Top_Button" title="Return to top">&#8657;</button>
+	<!--Header section-->
+	<header>
+		<div>	
+			<img src="Images/TitleGallery.png" alt="Gallery Title" class="HeaderImage">	
+			<p onclick="openNav()" class="MenuIcon">&#9776;</p> 
+		</div>
+	</header>
+
+	<!--navigation menu section-->
+	 <!-- The overlay -->
+	<div id="myNav" class="Overlay">
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <!-- Overlay content -->
+		<div class="Overlay_Menu">
+		<ul>
+				<li><a href="index.html">HomePage</a></li>
+				<li><a href="ForSale.html">For Sale</a></li>
+				<li><a href="PartShop.html">Parts Shop</a></li>
+				<li><a href="RevInfo.html">Reviews/Information</a></li>
+				<li><a href="HistoryFuture.html">History/Future</a></li>
+				<li><a href="Gallery.html" class ="Active">Gallery</a></li>
+				<li><a href="SiteMap.html">Site Map</a></li>
+				<li><a href="ContactUS.html">Contact us</a></li>
+				<li><a href="AboutUS.html">About us</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--Main content section-->
+	<main>
+
+	<section>		
+		<div class="GallerySetting">
+			<img class="PicOne Modal" id="myImg" src="Images/TimeBike1900.jpg" alt="1900 Bike">
+			<img class="PicTwo Modal" id="myImg" src="Images/TimeBike1920.jpg" alt="1920 Bike">
+			<img class="PicThree Modal" id="myImg" src="Images/TimeBike1950.jpg" alt="1950 Bike">
+			<img class="PicFour Modal" id="myImg" src="Images/TimeBike1960.jpg" alt="1960 Bike">
+			<img class="PicFive Modal" id="myImg" src="Images/TimeBike1970.jpg" alt="1970 Bike">
+			<img class="PicSix Modal" id="myImg" src="Images/TimeBike1980.jpg" alt="1980 Bike">
+			<img class="PicSeven Modal" id="myImg" src="Images/TimeBike1990.jpg" alt="1990 Bike">
+		</div>
+		<div id="myModal" class="modal">
+		  <span class="close">&times;</span>
+		  <img class="modal-content" id="img01">  
+		  <p id="caption"><p>
+		</div>
+		</section>
+		<section>
+		<br>
+			<p>Sound of a BMW bike starting and reving<p> 
+			<p><iframe frameborder="0" scrolling="no" src="https://freesound.org/embed/sound/iframe/463842/simple/small/" width="375" height="30"></iframe></p>
+		</section>
+	</main>
+	
+	<!--Footer section-->
+	<footer>
+		This website was created by: Eamon McCabe.  It is solely for educational purposes only <br />
+		If you have any questions about the information you have found here please contact me at: <a href="mailto:drwho00769@gmail.com">drwho00769@gmail.com</a>
+	</footer>
+	
+	<script type="text/javascript" src="js/BikesRUsjavascript.js">
+	</script>	
+
+</body>
+</html>
