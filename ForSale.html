@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>For Sale</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!----Button to reutn the user to top of page---->
+	<button onclick="Return_To_Top()" id="Return_Top_Button" title="Return to top">&#8657;</button>
+	<!--Header section-->
+	<header>
+		<div>	
+			<img src="Images/TitleForSale.png" alt="Bikes R US" class="HeaderImage">	
+			<p onclick="openNav()" class="MenuIcon">&#9776;</p> 
+		</div>
+	</header>
+
+	<!--navigation menu section-->
+	 <!-- The overlay -->
+	<div id="myNav" class="Overlay">
+
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+    <div class="Overlay_Menu">
+    <ul>
+            <li><a href="index.html">HomePage</a></li>
+            <li><a href="ForSale.html" class ="Active">For Sale</a></li>
+			<li><a href="PartShop.html">Parts Shop</a></li>
+            <li><a href="RevInfo.html">Reviews/Information</a></li>
+			<li><a href="HistoryFuture.html">History/Future</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="SiteMap.html">Site Map</a></li>
+			<li><a href="ContactUS.html">Contact us</a></li>
+			<li><a href="AboutUS.html">About us</a></li>
+        </ul>
+	</div>
+	</div>
+	<!--Main content section-->
+	<main>
+		<section>
+			<div class="Common_Row">
+				<div class="Common_Column">
+					<h3 id="ChosenHeading">Please click on a bike in the slide show</h3>
+					<img src="Images/SaleCustom.jpg" class="For_Sale_Img" alt="Image not found" id="ChosenImage">	
+				</div>							
+				<div class="Common_Column">
+					<div class="Slideshow_Zone">
+						<div class="Slideshow_Heading">
+							<h3>These are the motorcycles currently listed on our website.</h3>
+						</div>
+						<div class="Slideshow_Main">
+							<div class="Slideshow_Wrapper" >
+								<div class="Slideshow_Content"  onclick="AdventureBike()">
+									<h2>All terrain adventure bike</h2>
+									<img src="Images/SaleAdventure.jpg" alt="Adventure Bike Sale">
+									<p>This bike will satisfy your need on and off the road.  It has low kilometers and is avaliable now for you to view.  Please call me of 555-5463 to book in a viewing or test ride.  If you have any questions please feel free to email me at email@gmail.com</p>				
+								</div>
+								<div class="Slideshow_Content" onclick="SaleCruiser()">
+									<h2>Harley Davidson, Cruiser</h2>
+									<img src="Images/SaleCruiser.jpg" alt="Cruiser Bike Sale">
+									<p>My bike which I can no longer ride due to having a family is now up for sale.  It is in top condition and is full serviced. This is a regretful sale on my behalf but I haope the next owners enjoys her as much as I do.<br>  PH: 555-2309</p>				
+								</div>
+								<div class="Slideshow_Content" onclick="SaleCustom()">
+									<h2>Custom 1100cc monster</h2>
+									<img src="Images/SaleCustom.jpg" alt="Custom Bike Sale">
+									<p>I am placing my fully custom 1100cc bike up for sale.  I am working on to many projects and I have completed this one so now I need room for the next.  Please email me for more details or to come around and see it.  Email: bob@gmail.com</p>				
+								</div>		
+								<div class="Slideshow_Content" onclick="SaleDirt()">
+									<h2>250cc Yamaha Dirt Bike</h2>
+									<img src="Images/SaleDirt.jpg" alt="Dirt Bike Sale">
+									<p>I have just purchased myself a new dirt bike so I need to sell my old one.  My bike has custom shocks, carby and exhaust.  It is only 2 years old and has been used a dozen times a year.  Perfect for anyone looking for thier first bike as it is very well looked after and never been dropped.  PH: 555-8756</p>				
+								</div>	
+								<div class="Slideshow_Content" onclick="SaleOldSchool()">
+									<h2>Vintage Bike</h2>
+									<img src="Images/SaleOldSchool.jpg" alt="Old School Bike Sale">
+									<p>Its come time for me to hag up my boots, so my vintage bike is going up for sale.  Unfortunaly due to an old injury I can no longer ride.  It is in very good condition and needs a little love from time to time.  all inquerys welcome.  PH: 555-8765 Email:reg@gmail.com</p>				
+								</div>								
+							</div>	
+						</div>	
+						<h3>Please click on the motorcycle you are intrested in to see the information on your screen.<br>If you would like to sell your motorcycle with us please click on the button below.<br>
+						<a href="ContactUS.html" class="Contact_Us_Button">Contact US</a></h3>						
+					</div>
+				</div>	
+				<div class="For_Sale_Column">		
+					<h3>Bike Information</h3>
+					<p class="For_Sale_Img" id="ChosenBikeInfo">Please select a Bike to view more information</p>
+				</div>				
+			</div>
+		</section>
+		<section>
+			<a href="PartShop.html">
+			<img src="Images/SparePartsCatalog.png" class="Center_Img" alt="Spare Parts Catalog">
+			</a>
+		</section>
+	</main>
+	<!--Footer section-->
+	<footer>
+		This website was created by: Eamon McCabe.  It is solely for educational purposes only <br />
+		If you have any questions about the information you have found here please contact me at: <a href="mailto:drwho00769@gmail.com">drwho00769@gmail.com</a>
+	</footer>
+	
+	<script type="text/javascript" src="js/BikesRUsjavascript.js">
+	</script>	
+
+</body>
+</html>
