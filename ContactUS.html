@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!----Button to reutn the user to top of page---->
+	<button onclick="Return_To_Top()" id="Return_Top_Button" title="Return to top">&#8657;</button>
+	<!--Header section-->
+	<header>
+		<div>	
+			<img src="Images/TitleContactUS.png" alt="Contact US" class="HeaderImage">	
+			<p onclick="openNav()" class="MenuIcon">&#9776;</p> 
+		</div>
+	</header>
+
+	<!--navigation menu section-->
+	 <!-- The overlay -->
+	<div id="myNav" class="Overlay">
+
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+    <div class="Overlay_Menu">
+    <ul>
+            <li><a href="Index.html">HomePage</a></li>
+            <li><a href="ForSale.html">For Sale</a></li>
+			<li><a href="PartShop.html">Parts Shop</a></li>
+            <li><a href="RevInfo.html">Reviews/Information</a></li>
+			<li><a href="HistoryFuture.html">History/Future</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="SiteMap.html">Site Map</a></li>
+			<li><a href="ContactUS.html" class ="Active">Contact us</a></li>
+			<li><a href="AboutUS.html">About us</a></li>
+        </ul>
+	</div>
+	</div>
+
+<!--Main content section-->
+<main>
+	<section class="ContactUS_Form">
+		<h2>Please fill in the form below and we will contact you ASAP 
+			<br>OR simply submit your email address to join our mailing list.</h2>
+			<form name="ContactUsForm" method ="POST" action="processform.php">
+				<div class="row">
+					<div class="Col_25">
+						<label for="fname">Your Name: </label>
+					</div>
+					<div class="Col_60">
+						<input type="text" id="fname" name="firstname" placeholder="Your name ...">
+					</div>
+				</div>							
+				<div class="row">
+					<div class="Col_25">
+						<label for="eaddress">Your Email address: <span style="color: red; font-style: italic;"> (*required)</span></label>
+					</div>
+					<div class="Col_60">
+						<input type="text" id="eaddress" name="emailaddress" placeholder="Your email address..." required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Col_25">
+						<label for="sku">SKU : <i>(For Part Order Only)</i></label>
+					</div>
+					<div class="Col_60">
+						<input type="text" id="sku" name="skunumber" placeholder="SKU Number ...">
+					</div>
+				</div>				
+				<div class="row">
+					<div class="Col_25">
+						<label for="query">Your Query: </label>
+					</div>
+						
+					<div class="col-60">
+						<textarea id="query" maxlength="512" name="cusquery" placeholder="What can we help you with?... Max of 512 charcters" style="height:200px"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Col_25">
+						<label for="MailoutOption">Would you like to subscribe to our mailing list?</label>
+					</div>
+					<div class="Col_60">
+						<input type="radio" id="yes" name="domestic" value="YES" checked>
+						<label for="yes">YES</label>
+						<input type="radio" id="no" name="domestic" value="NO">
+						<label for="no">NO</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="Col_25">
+						<label for="MailoutOption">How do you rate our website?</label>
+					</div>
+					<div class="Col_60">
+						<input type="radio" id="10" name="10" value="10" checked>
+						<label for="yes">10</label>
+						<input type="radio" id="9" name="9" value="9">
+						<label for="no">9</label>
+						<input type="radio" id="yes" name="8" value="8">
+						<label for="yes">8</label>
+						<input type="radio" id="no" name="7" value="7">
+						<label for="no">7</label>
+						<input type="radio" id="yes" name="6" value="6">
+						<label for="yes">6</label>
+						<input type="radio" id="no" name="5" value="5">
+						<label for="no">5</label>
+						<input type="radio" id="4" name="4" value="4">
+						<label for="yes">4</label>
+						<input type="radio" id="9" name="3" value="3">
+						<label for="no">3</label>
+						<input type="radio" id="yes" name="2" value="2">
+						<label for="yes">2</label>
+						<input type="radio" id="no" name="1" value="1">
+						<label for="no">1</label>
+					</div>
+				</div>
+				<div class="button-row">
+					<div class="Submit_Button">				
+						<input onmouseover="PlayThanksSound()" type="submit" value="Submit" >
+					</div>
+					<div class="Reset_Button">
+						<input type="reset" value="Reset">
+					</div>
+				</div>					
+			</form>			
+	</section>
+</main>
+	<!--Footer section-->
+	<footer>
+		This website was created by: Eamon McCabe.  It is solely for educational purposes only <br />
+		If you have any questions about the information you have found here please contact me at: <a href="mailto:drwho00769@gmail.com">drwho00769@gmail.com</a>
+	</footer>
+	
+	<script type="text/javascript" src="js/BikesRUsjavascript.js">
+	</script>	
+
+</body>
+</html>

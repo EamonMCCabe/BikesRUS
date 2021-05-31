@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Site Map</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!----Button to reutn the user to top of page---->
+	<button onclick="Return_To_Top()" id="Return_Top_Button" title="Return to top">&#8657;</button>
+	<!--Header section-->
+	<header>
+		<div>	
+			<img src="Images/TitleSiteMap.png" alt="Site Map" class="HeaderImage">	
+			<p onclick="openNav()" class="MenuIcon">&#9776;</p> 
+		</div>
+	</header>
+
+	<!--navigation menu section-->
+	 <!-- The overlay -->
+	<div id="myNav" class="Overlay">
+
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+    <div class="Overlay_Menu">
+    <ul>
+            <li><a href="index.html">HomePage</a></li>
+            <li><a href="ForSale.html">For Sale</a></li>
+			<li><a href="PartShop.html">Parts Shop</a></li>
+            <li><a href="RevInfo.html">Reviews/Information</a></li>
+			<li><a href="HistoryFuture.html">History/Future</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="SiteMap.html" class ="Active">Site Map</a></li>
+			<li><a href="ContactUS.html">Contact us</a></li>
+			<li><a href="AboutUS.html">About us</a></li>
+        </ul>
+	</div>
+	</div>
+
+ 
+	<!--Main content section-->
+	<main>
+		<section>
+			<div class="Common_Row">
+				<div class="Common_Column">
+					<a href="index.html">			
+					<img src="Images/IconHome.png" class= "Site_Map_Img" alt="Home Page Icon">	
+					<p>Click here to goto the home page.</p>
+					</a>
+				</div>
+				<div class="Common_Column">
+					<a href="ForSale.html">			
+					<img src="Images/IconForsale.jpg" class= "Site_Map_Img" alt="For Sale Page Icon">	
+					<p>Click here to goto the for sale page.</p>
+					</a>
+				</div>
+				<div class="Common_Column">
+					<a href="PartShop.html">			
+					<img src="Images/IconSpareparts.png" class= "Site_Map_Img" alt="Spares Page Icon">	
+					<p>Click here to goto the spare parts page.</p>
+					</a>
+				</div>
+				<div class="Common_Column">
+					<a href="RevInfo.html">			
+					<img src="Images/IconInformation.jpeg" class= "Site_Map_Img" alt="Information Page Icon">	
+					<p>Click here to goto the Reviews & Information page.</p>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="Common_Row">
+				<div class="Common_Column">
+					<a href="HistoryFuture.html">			
+					<img src="Images/IconHistory.jpg" class= "Site_Map_Img" alt="History Page Icon">	
+					<p>Click here to goto the History page.</p>
+					</a>
+				</div>
+				<div class="Common_Column">
+					<a href="Gallery.html">			
+					<img src="Images/IconGallery.jpg" class= "Site_Map_Img" alt="Gallery Page Icon">	
+					<p>Click here to goto the for Gallery page.</p>
+					</a>
+				</div>
+				<div class="Common_Column">
+					<a href="ContactUS.html">			
+					<img src="Images/IconContactUS.jpg" class= "Site_Map_Img" alt="ContactUS Page Icon">	
+					<p>Click here to goto the Contact US page.</p>
+					</a>
+				</div>
+				<div class="Common_Column">
+					<a href="AboutUS.html">			
+					<img src="Images/IconAboutUS.png" class= "Site_Map_Img" alt="AboutUS Page Icon">	
+					<p>Click here to goto the About us page.</p>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	
+	
+	<!--Footer section-->
+	<footer>
+		This website was created by: Eamon McCabe.  It is solely for educational purposes only <br />
+		If you have any questions about the information you have found here please contact me at: <a href="mailto:drwho00769@gmail.com">drwho00769@gmail.com</a>
+	</footer>
+	
+	<script type="text/javascript" src="js/BikesRUsjavascript.js">
+	</script>	
+
+</body>
+</html>
