@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!----Button to reutn the user to top of page---->
+	<button onclick="Return_To_Top()" id="Return_Top_Button" title="Return to top">&#8657;</button>
+	<!--Header section-->
+	<header>
+		<div>	
+			<img src="Images/TitleAboutUS.png" alt="About US" class="HeaderImage">	
+			<p onclick="openNav()" class="MenuIcon">&#9776;</p> 
+		</div>
+	</header>
+
+	<!--navigation menu section-->
+	 <!-- The overlay -->
+	<div id="myNav" class="Overlay">
+
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+    <div class="Overlay_Menu">
+    <ul>
+            <li><a href="index.html">HomePage</a></li>
+            <li><a href="ForSale.html">For Sale</a></li>
+			<li><a href="PartShop.html">Parts Shop</a></li>
+            <li><a href="RevInfo.html">Reviews/Information</a></li>
+			<li><a href="HistoryFuture.html">History/Future</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="SiteMap.html">Site Map</a></li>
+			<li><a href="ContactUS.html">Contact us</a></li>
+			<li><a href="AboutUS.html" class ="Active">About us</a></li>
+        </ul>
+	</div>
+	</div>
+
+ 
+	<!--Main content section-->
+	<main>
+			<div class="Common_Row">
+				<div class="AboutUs_Column">
+					<img src="Images/New_Zealand_Map.png" alt="NZ Location">										
+					<p>We are prudly born and bread in Hawkes Bay!!! Our business is aimed at keeping locals employed.  If you require any additional advice on motor cycle related questions please feel free to contact us.</p>	
+				</div>
+				<div class="AboutUs_Column">
+					<iframe src="https://giphy.com/embed/l2R0aDJcn5MoJlbOg" class="AboutUs_Gif"></iframe>										
+					<h3><a href="ContactUS.html" class="Contact_Us_Button">Contact US</a></h3>
+				</div>
+				<div class="AboutUs_Column">
+					<img src="Images/Happy.png" alt="Customer Happiness">	
+					<p>Our customers have given us an overall rating of 96% positive response to how we deal with any issues or matters we have delt with.</p>					
+				</div>	
+			</div>		
+
+		
+	</main>
+	
+	<!--Footer section-->
+	<footer>
+		This website was created by: Eamon McCabe.  It is solely for educational purposes only <br />
+		If you have any questions about the information you have found here please contact me at: <a href="mailto:drwho00769@gmail.com">drwho00769@gmail.com</a>
+	</footer>
+	
+	<script type="text/javascript" src="js/BikesRUsjavascript.js">
+	</script>	
+
+</body>
+</html>
